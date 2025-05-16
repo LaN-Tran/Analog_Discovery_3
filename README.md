@@ -10,7 +10,7 @@
 
 # Reference
 
-- Prefer the most updated system (so that we have support): such as Analog Discovery 3, [link](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start)
+- [0] [Analog Discovery 3, device information](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start)
 
 - [1] [can measure current, voltage](https://digilent.com/reference/test-and-measurement/analog-discovery-2/demos/measuring-current#:~:text=The%20Analog%20Discovery%202%20cannot,the%20resistance%20of%20the%20circuit) 
 

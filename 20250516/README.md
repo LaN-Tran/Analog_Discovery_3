@@ -25,3 +25,15 @@
 
 - After downloading, linking the package **WF_SDK** (insruction in file `ad3_sdk_python.ipynb` - section `Workflow` - `3.Using Instruments`), and running the `ad3_sdk_python.ipynb` sucessfully, keeping the current measurement setup (AD3 W1/GND  - AD3 1+/1-), we could run the provided sample codes (`test_device_info.py`, `test_scope-wavegen.py`) in folder `../WaveForms-SDK-Getting-Started-PY-master/WaveForms-SDK-Getting-Started-PY-master` (which is the parent folder of the package **WF_SDK**. The folder is the result of the donwloading **WF_sDK** according to the  insruction in file `ad3_sdk_python.ipynb` - section `Workflow` - `3.Using Instruments`)
 
+# Practice with SDK python
+
+- Other files (which are not mentioned above) are practice of using SDK python and understanding it.
+
+- To understand better the SDK and functions used in SDK (the `dwf`), in `WF_SDK` package:
+
+  - refer to the source codes (i.e `.py` files in the `WF_SDK` package)
+
+  - to understand functions from SDK (such as `dwf.FDwfAnalogInChannelEnableSet()`, `dwf.FDwfAnalogInStatus()`), refer to the `../WaveForms SDK Reference Manual.pdf` or to the `"C:\Program Files (x86)\Digilent\WaveFormsSDK\WaveForms SDK Reference Manual.pdf"` (based on the directory when installing WaveForms application).
+
+
+
