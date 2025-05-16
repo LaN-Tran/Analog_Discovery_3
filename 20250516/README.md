@@ -16,8 +16,8 @@
 
 ## Using SDK python to interact with the AD3 hardware instead of WaveForms application
 
-- Simple open any IDE (e.g Vscode) with python installed, follow the instruction in this section to know how to use python to communicate with the hardware AD3 without using the WaveForms application provided by Digilent. Regardless of whether the WaveForms app is used or not, **WaveForms must be donwloaded and installed** to be able to use python for building a customed application to interact with AD3.
- 
+- Simply open any IDE (e.g Vscode) with python installed, follow the instruction in this section to know how to use python to communicate with the hardware AD3 without using the WaveForms application provided by Digilent. Regardless of whether the WaveForms app is used or not, **WaveForms must be donwloaded and installed** to be able to use python for building a customed application to interact with AD3.
+
 - **IMPORTANT**: **one hardware (AD3) - only one application connection**. 
     For example, before running codes in file `ad3_sdk_python.ipynb`, if the WaveForms application has been opened and runned; then, the code in file `ad3_sdk_python.ipynb` can not access the hardware AD3 anymore. That leads to failure as a result of running `ad3_sdk_python.ipynb` while WaveForms application has been opened to use already. 
 

@@ -29,6 +29,8 @@
 
 - [4] [Python with Analog Discovery 2](https://digilent.com/reference/test-and-measurement/guides/waveforms-sdk-getting-started?srsltid=AfmBOor7O9UOChKs5_BxxQbqcvO2yG6K-rLJxbPG9qBuXNIQOY_XfWvY)
 
+  - [4.1] documents of the provided folder `"C:\Program Files (x86)\Digilent\WaveFormsSDK\samples\py"` (result of installing WaveForms application) is found [here, a python library `pydwf` by Digilent](https://pydwf.readthedocs.io/en/latest/background/Examples.html)
+
 - [5] [Curve tracer (plot I/V of BJT, MOSFET)](https://digilent.com/reference/test-and-measurement/guides/waveforms-curve-tracer)
 
 - [6] [full info about analog discovery 3](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start)
