@@ -6,7 +6,7 @@
 
   - [WaveForms application, newest version, link 2](https://digilent.com/reference/software/waveforms/waveforms-3/start?srsltid=AfmBOooDr4e5LtILuYHxpz7e0yHVPfSmtHzb8Xf92cjQiBNodXeCD3Ch)
 
-- Folder 20240516 contains **_setup and introduction_** information of using the AD3
+- Folder 20250516 contains **_setup and introduction_** information of using the AD3. (Starting from this folder **FIRST**)
 
 # Reference
 
