@@ -36,4 +36,5 @@
 - [6] [full info about analog discovery 3](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start)
 
 - [7] [Digilent products](https://digilent.com/reference/test-and-measurement/start)
-	
+
+- [8] [WaveForms app Manual](https://files.digilent.com/manuals/WaveForms/3.24.2/index.html)
