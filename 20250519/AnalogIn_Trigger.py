@@ -87,7 +87,7 @@ wait = 0 # [s]
 dwf.FDwfAnalogOutWaitSet(hdwf, awg_channel, c_double(wait))
 
 # set number of repeating cycles (Armed - Trigger - Wait - Run)
-repeat = 1
+repeat = 2
 dwf.FDwfAnalogOutRepeatSet(hdwf, awg_channel, c_int(repeat))
 
 # Set trigger for the ouput AWG
@@ -98,11 +98,12 @@ dwf.FDwfAnalogOutTriggerSourceSet(hdwf, awg_channel, constants.trigsrcPC)
 # fStart – Start the instrument: 0 stop, 1 start, 3 apply
 dwf.FDwfAnalogOutConfigure(hdwf, awg_channel, c_int(1))
 
+
 print("Confiure Oscilloscope...")
 osc_ch = c_int(0)
 
 cSamples = 16384
-hzRate = 1e6
+hzRate = 2e6
 rgdSamples = (c_double*cSamples)()
 cAvailable = c_int()
 cLost = c_int()
@@ -167,6 +168,7 @@ if dwf.FDwfAnalogInTriggerConditionSet(hdwf, constants.trigcondRisingPositive) =
     print(f"ERROR")
 
 
+
 #FDwfAnalogInConfigure(HDWF hdwf, int fReconfigure, int fStart)
 if dwf.FDwfAnalogInConfigure(hdwf, c_bool(False), c_bool(True)) == 0:
         print(f"ERROR")
@@ -174,20 +176,23 @@ if dwf.FDwfAnalogInConfigure(hdwf, c_bool(False), c_bool(True)) == 0:
 time.sleep(2)
 
 print("Starting repeated acquisitions")
+
 # Trigger the AWG
 dwf.FDwfDeviceTriggerPC(hdwf)
 
-    
     # read data to an internal buffer
 while True:
         status = c_byte()    # variable to store buffer status
         if dwf.FDwfAnalogInStatus(hdwf, c_bool(True), byref(status)) == 0:
             print(f"ERROR")
-    
+        
+        print(f"channel status: {status}")
         # check internal buffer status
         if status.value == constants.DwfStateDone.value:
                 # exit loop when ready
                 break
+        
+        time.sleep(0.001)
     
     # copy buffer
 if dwf.FDwfAnalogInStatusData(hdwf, osc_ch, rgdSamples, c_int(cSamples)) == 0:
@@ -217,3 +222,5 @@ plt.xlabel("time [ms]")
 plt.ylabel("voltage [V]")
 plt.show()
 
+# plt.plot(numpy.fromiter(rgdSamples, dtype = numpy.float16))
+# plt.show()
