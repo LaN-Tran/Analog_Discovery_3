@@ -2,7 +2,7 @@
 import sys
 
 # adding path to **parent folder** of package **WF_SDK** the  to the system path
-sys.path.insert(0, 'C:/Users/20245580/LabCode/AD3/WaveForms-SDK-Getting-Started-PY-master/WaveForms-SDK-Getting-Started-PY-master')
+sys.path.insert(0, '/home/tlplan/workspace/Analog_Discovery_3/WaveForms-SDK-Getting-Started-PY-master/WaveForms-SDK-Getting-Started-PY-master')
 
 from WF_SDK import device, scope, wavegen, tools, error   # import instruments
 
@@ -27,7 +27,7 @@ try:
         scope.trigger(device_data, enable=True, source=scope.trigger_source.analog, channel=1, level=0)
 
         # generate a 10KHz sine signal with 2V amplitude on channel 1
-        wavegen.generate(device_data, channel=1, function=wavegen.function.sine, offset=0, frequency=10e03, amplitude=2)
+        wavegen.generate(device_data, channel=1, function=wavegen.function.sine, offset=0, frequency=10e02, amplitude=4)
 
         sleep(1)    # wait 1 second
 
@@ -49,6 +49,7 @@ try:
         plt.plot(time, buffer)
         plt.xlabel("time [ms]")
         plt.ylabel("voltage [V]")
+        plt.ylim(-5, 5)
         plt.show()
 
         """-----------------------------------"""
