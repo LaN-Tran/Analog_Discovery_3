@@ -1,3 +1,13 @@
+# Folder description
+
+- 1. `AnalogIn_Trigger.py`
+
+  - A modification of the Digilent example (whose name is the same) with some comments to better understand some codes/ commands. Modification includes
+
+    - check the retuned state of important commands.
+
+    - Modify the code to implement the **[1] - Cross-triggering** (below), for the case of instrument (e.g Wave Generator) between instrument (e.g Oscilloscope) within the same Analog Discovery device: oscilloscope channel triggered by wave generator channel, wave generator channel is triggered by a signal sent by the python program (i.e PC = Manual Trigger).
+
 # Reference
 
 - [1] Cross-triggering (device to device, or instrument to instrument (wavegen triggers oscilloscope) within the same device):

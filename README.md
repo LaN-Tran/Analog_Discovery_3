@@ -8,6 +8,8 @@
 
 - Folder 20250516 contains **_setup and introduction_** information of using the AD3. (Starting from this folder **FIRST**)
 
+- Within each foler of this repository, a `README.md` is included to give details of each folder purpose. The folder names are in format **YYYYMMDD**. That is why they are showing the progress (i.e evolution) of this repository.
+
 # Reference
 
 - [0] [Analog Discovery 3, device information](https://digilent.com/reference/test-and-measurement/analog-discovery-3/start)

@@ -1,3 +1,24 @@
+# Folder description
+
+- 1. `AnalogIn_ShiftScreen.py` 
+
+  - A modification of the Digilent example (whose name is the same). Modification includes:
+
+   - Add debug information about oscilloscope channel configuration
+
+   - Test about the range setting/configuration of oscilloscope channel
+
+- 2. `measurement_prac1.ipynb`
+
+  - a copy of `../20250521/analog_diode.ipynb` with the continuation to complete the EXP 2.
+
+  - Include experiments:
+
+   - EXP 1: simple setup to understand how to read out configuration information of instruments in the device (for verifying the configuration step, also provide understanding of the instrument operating states (e.g Configure, Ready, Arm, Done))
+
+   - EXP 2: Apply multithread python technique to parallel the two actions: changing the wave generator configuration while continuously recording the signal from a oscilloscope channel.
+
+
 # Problems
 
 - 1. When `dwf.FDwfAnalogInChannelRangeSet(hdwf, oscilloscope_ch, c_double(4))`, and the generated signal positive/negative max amplitude by the wavegenerator is always cut back to 2.5V / -2.5V. That means the range set of the oscilloscope is wrong. but why wrong? to answer this question, it leads to the **problem 2** below: 
